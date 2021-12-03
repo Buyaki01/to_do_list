@@ -1,22 +1,6 @@
 import './style.css';
-
-const itemArray = [
-  {
-    description: 'Water maize',
-    completed: false,
-    index: 0,
-  },
-  {
-    description: 'Wash Kitten',
-    completed: false,
-    index: 1,
-  },
-  {
-    description: 'Take a nap',
-    completed: false,
-    index: 2,
-  },
-];
+import ToDoList from './toDo.js';
+import LocalStorage from './storage.js';
 
 function component() {
   const element = document.createElement('ul');
@@ -30,18 +14,26 @@ function component() {
             <button><i class="fa fa-plus" aria-hidden="true"></i>
             </button>`;
   element.appendChild(addToList);
+  const itemArray = LocalStorage.getList();
+  console.log(itemArray);
   itemArray.forEach((item) => {
     const listItem = document.createElement('li');
     listItem.classList.add('items_created');
     listItem.innerHTML = `<input type="checkbox" class="check_box"> <p>${item.description}</p> <button>
                 <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
               </button>`;
+              const completed = listItem.querySelector('.check_box');
+              completed.checked = item.completed;
+              completed.addEventListener('change', (e) => ToDoList.changeStatus(item.index, e.target.checked));          
     element.appendChild(listItem);
   });
+  
+  const lengthArray = itemArray.length;
   const clearCompleted = document.createElement('button');
   clearCompleted.classList.add('clear_completed');
   clearCompleted.innerHTML = 'Clear all completed';
   element.appendChild(clearCompleted);
+  console.log(element);
   return element;
 }
 
