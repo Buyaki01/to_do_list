@@ -20,7 +20,7 @@ Additional description about the project and its features.
 - Install all packages
 - Edit the code and check for changes in the browser using Live Server
 
-##Web-pack Setup
+## Web-pack Setup
 - Install Web-pack: Run npm install webpack
 - Update dist folder with the changes from src folder: Run npm run build
 - Check the live changes through the local host: Run npm start
