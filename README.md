@@ -2,7 +2,7 @@
 
 # To Do List
 
-> This is a to-do list using WebPack.
+> This project can be used to list out the tasks one wishes to accomplish. Users can enter the task and remove tasks already completed.
 
 Additional description about the project and its features.
 
@@ -14,13 +14,16 @@ Additional description about the project and its features.
 - Webpack
 
 ## Getting Started
-
-This project can be used to list out the tasks one wishes to accomplish. Users can enter the task and remove tasks already completed.
+- Open your terminal or command line
+- Run "git clone [Paste this link](git@github.com:Buyaki01/to_do_list.git)"
+- Open the folder with your code editor
+- Install all packages
+- Edit the code and check for changes in the browser using Live Server
 
 ##Web-pack Setup
-Install Web-pack: Run npm install webpack
-Update dist folder with the changes from src folder: Run npm run build
-Check the live changes through the local host: Run npm start
+- Install Web-pack: Run npm install webpack
+- Update dist folder with the changes from src folder: Run npm run build
+- Check the live changes through the local host: Run npm start
 
 ## Author
 
