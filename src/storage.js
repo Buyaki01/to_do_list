@@ -3,23 +3,7 @@ export default class LocalStorage {
   static getList() {
     let toDoList = JSON.parse(localStorage.getItem('toDoList'));
     if (!toDoList) {
-      toDoList = [
-        {
-          description: 'Water maize',
-          completed: false,
-          index: 0,
-        },
-        {
-          description: 'Wash Kitten',
-          completed: false,
-          index: 1,
-        },
-        {
-          description: 'Take a nap',
-          completed: false,
-          index: 2,
-        },
-      ];
+      toDoList = [];
     }
     return toDoList;
   }
