@@ -6,9 +6,16 @@
 }
 
 ul {
+  display: flex;
+  flex-direction: column;
   border: 2px solid black;
   padding: 0;
   width: 500px;
+}
+
+.contentsOfTheList {
+  border: none;
+  width: 100%;
 }
 
 li {
@@ -24,11 +31,19 @@ button {
   background: none;
 }
 
+.itemAdded {
+  border: none;
+}
+
+.itemAdded:focus {
+  border: 2px solid gray;
+}
+
 .items_created {
   row-gap: 10px;
 }
 
-.items_created p {
+.items_created .itemAdded {
   flex: 4;
 }
 
@@ -58,4 +73,9 @@ input[type=checkbox]:checked::after {
 
 input[type=checkbox]:checked + p {
   text-decoration: line-through;
+}
+
+.enteredValue {
+  width: 80%;
+  border: none;
 }
