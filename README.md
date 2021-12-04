@@ -2,10 +2,9 @@
 
 # To Do List
 
-> This is a to-do list using WebPack.
+> This project can be used to list out the tasks one wishes to accomplish. Users can enter the task and remove tasks already completed.
 
 Additional description about the project and its features.
-
 
 ## Built With
 
@@ -14,14 +13,17 @@ Additional description about the project and its features.
 - Javascript
 - Webpack
 
-##Live Demo
-![live demo link](https://competent-swirles-bcd6c1.netlify.app)
-
 ## Getting Started
+- Open your terminal or command line
+- Run "git clone [Paste this link](git@github.com:Buyaki01/to_do_list.git)"
+- Open the folder with your code editor
+- Install all packages
+- Edit the code and check for changes in the browser using Live Server
 
-This project can be used to list out the tasks one wishes to accomplish. Users can enter the task and remove tasks already completed.
-
-To get a local copy up and running follow these simple example steps.
+## Web-pack Setup
+- Install Web-pack: Run npm install webpack
+- Update dist folder with the changes from src folder: Run npm run build
+- Check the live changes through the local host: Run npm start
 
 ## Author
 
