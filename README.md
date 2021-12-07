@@ -6,6 +6,9 @@
 
 Additional description about the project and its features.
 
+## Live Demo
+![Live Link](https://buyaki01.github.io/to_do_list/)
+
 ## Built With
 
 - HTML
@@ -36,7 +39,7 @@ Additional description about the project and its features.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page]().
+Feel free to check the [issues page](https://github.com/Buyaki01/to_do_list/issues).
 
 ## Show your support
 
