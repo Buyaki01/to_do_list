@@ -2,7 +2,6 @@ import LocalStorage from './storage.js';
 import Tasks from './todolistitem.js';
 
 export default class ToDoList {
-  // change status(completed) of to-do item
   static addToForm(description) {
     if (description.trim().length > 0) {
       const model = LocalStorage.getList();
@@ -34,7 +33,6 @@ export default class ToDoList {
     LocalStorage.save(ToDoList.reAssignIndex(newlistItems));
   }
 
-  // Adjusts list index values to match actual index
   static reAssignIndex(model) {
     model.forEach((item, index) => {
       item.index = index + 1;
