@@ -7,7 +7,7 @@
 Additional description about the project and its features.
 
 ## Live Demo
-![Live Link](https://buyaki01.github.io/to_do_list/)
+![Live Demo](https://agitated-feynman-51a791.netlify.app)
 
 ## Built With
 
