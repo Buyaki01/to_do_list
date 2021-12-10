@@ -1,7 +1,7 @@
 import LocalStorage from './storage.js';
 import Tasks from './todolistitem.js';
 
-export default class ToDoList {
+class ToDoList {
   static addToForm(description) {
     if (description.trim().length > 0) {
       const model = LocalStorage.getList();
@@ -47,3 +47,4 @@ export default class ToDoList {
     LocalStorage.save(model);
   }
 }
+module.exports = ToDoList;
