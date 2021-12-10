@@ -12,4 +12,11 @@ describe('Check toDo List functions ', () => {
     const model = LocalStorage.getList();
     expect(model.length).toEqual(1);
   });
+
+  test('check edit function ', () => {
+    ToDoList.editForm('Mop the house', 1)
+    const model = LocalStorage.getList();
+    const listItem = model.find((item) => item.index === 1);
+    expect(listItem.description).toEqual('Mop the house');
+  });
 });
